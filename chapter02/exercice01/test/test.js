@@ -24,4 +24,12 @@ describe('Array iteration', _ => {
       assert.strictEqual(consoleLogSpy.getCall(i).args[0], reverseInput[i]);
     }
   })
+
+  it(`should print the sum of ${inputs}`, function() {
+    const reverseInput = [...inputs].reverse()
+    printTableInverted(inputs)
+    for (let i = 0; i < reverseInput.length; i++) {
+      assert.strictEqual(consoleLogSpy.getCall(i).args[0], reverseInput[i]);
+    }
+  })
 })

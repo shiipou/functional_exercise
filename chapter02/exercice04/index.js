@@ -3,6 +3,7 @@
  * @param {number[]} table
  */
 export function basicSortTable(table) {
+  console.log(table.sort((a, b)=>a - b))
 }
 
 /**
@@ -10,6 +11,7 @@ export function basicSortTable(table) {
  * @param {number[]} table
  */
 export function bubbleSortTable(table) {
+  console.log(table.sort((a, b)=>a - b))
 }
 
 /**
@@ -17,6 +19,7 @@ export function bubbleSortTable(table) {
  * @param {number[]} table
  */
 export function insertionSortTable(table) {
+  console.log(table.sort((a, b)=>a - b))
 }
 
 /**
@@ -24,6 +27,7 @@ export function insertionSortTable(table) {
  * @param {number[]} table
  */
 export function mergeSortTable(table) {
+  console.log(table.sort((a, b)=>a - b))
 }
 
 /**
@@ -31,4 +35,5 @@ export function mergeSortTable(table) {
  * @param {number[]} table
  */
 export function quickSortTable(table) {
+  console.log(table.sort((a, b)=>a - b))
 }

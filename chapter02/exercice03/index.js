@@ -18,6 +18,8 @@ export function countOccurrencesInTable(table, wanted) {
  * @param {number[]} table
  */
 export function printUniqueElements(table) {
+  const uniqueElements = table.filter((value, index, self) => self.indexOf(value) === index);
+  console.log(uniqueElements);
 }
 
 /**
@@ -25,4 +27,11 @@ export function printUniqueElements(table) {
  * @param {number[]} table
  */
 export function isTableSorted(table) {
+  for (let i = 0; i < table.length - 1; i++) {
+    if (table[i] > table[i + 1]) {
+      console.log(false);
+      return;
+    }
+  }
+  console.log(true);
 }
